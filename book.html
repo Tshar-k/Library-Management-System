@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System - Book Booking Form</title>
+    <style>
+        /* Basic styling, you can enhance as per your project's design */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #FFFC33;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #7AFF33; /* Light background color */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], select, textarea, input[type="date"] {
+            width: calc(100% - 16px); /* Adjusted width to accommodate padding */
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #3355FF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #FF5B33;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Book Booking Form</h2>
+        <form action="/submit" method="post">
+            <label for="username">Your Name</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Format: 1234567890">
+
+            <label for="book-title">Book Title</label>
+            <input type="text" id="book-title" name="book-title" required>
+
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="borrow-date">Borrow Date</label>
+            <input type="date" id="borrow-date" name="borrow-date" required>
+
+            <label for="return-date">Expected Return Date</label>
+            <input type="date" id="return-date" name="return-date" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
